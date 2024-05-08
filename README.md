@@ -37,3 +37,27 @@ pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
 pip install --no-deps trl peft accelerate bitsandbytes
 ```
 **If you prefer other methods check  [Official Unsloth Repo](https://github.com/unslothai/unsloth)**
+
+## Training specs
+```bash
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.171.04             Driver Version: 535.171.04   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 4080 ...    Off | 00000000:01:00.0  On |                  N/A |
+| N/A   70C    P0             146W / 150W |   6717MiB / 12282MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A      1351      G   /usr/lib/xorg/Xorg                           69MiB |
+|    0   N/A  N/A     87122      C   .../rong/miniconda3/envs/us/bin/python     6638MiB |
++---------------------------------------------------------------------------------------+
+```

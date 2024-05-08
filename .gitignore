@@ -1,0 +1,7 @@
+/lora_model
+/model
+/llama.cpp
+model-unsloth*
+llama_error.log
+main.log
+/__pycache__
