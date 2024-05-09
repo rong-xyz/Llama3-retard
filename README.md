@@ -61,3 +61,17 @@ pip install --no-deps trl peft accelerate bitsandbytes
 |    0   N/A  N/A     87122      C   .../rong/miniconda3/envs/us/bin/python     6638MiB |
 +---------------------------------------------------------------------------------------+
 ```
+
+## Hosting using Gradio
+For better UI, you can install Gradio by:
+
+```bash
+pip install gradio
+```
+
+and run:
+
+```bash
+cd Llama3-retard
+python app.py
+```
