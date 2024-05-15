@@ -39,6 +39,9 @@ pip install --no-deps trl peft accelerate bitsandbytes
 **If you prefer other methods check  [Official Unsloth Repo](https://github.com/unslothai/unsloth)**
 
 ## Training specs
+
+### For Llama3-8B
+
 ```bash
 +---------------------------------------------------------------------------------------+
 | NVIDIA-SMI 535.171.04             Driver Version: 535.171.04   CUDA Version: 12.2     |
@@ -60,6 +63,32 @@ pip install --no-deps trl peft accelerate bitsandbytes
 |    0   N/A  N/A      1351      G   /usr/lib/xorg/Xorg                           69MiB |
 |    0   N/A  N/A     87122      C   .../rong/miniconda3/envs/us/bin/python     6638MiB |
 +---------------------------------------------------------------------------------------+
+```
+
+### For Qwen-14B
+
+```bash
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.171.04             Driver Version: 535.171.04   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 4080 ...    Off | 00000000:01:00.0  On |                  N/A |
+| N/A   80C    P0             145W / 150W |  10961MiB / 12282MiB |     93%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A      1351      G   /usr/lib/xorg/Xorg                           69MiB |
+|    0   N/A  N/A    361897      C   .../rong/miniconda3/envs/us/bin/python    10882MiB |
++---------------------------------------------------------------------------------------+
+
 ```
 
 ## Hosting using Gradio

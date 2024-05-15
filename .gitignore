@@ -5,3 +5,6 @@ model-unsloth*
 llama_error.log
 main.log
 /__pycache__
+*.gguf
+/qwen-model
+llama*

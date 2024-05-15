@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MODEL_PATH="/home/rong/Documents/_Projects/Llama3-retard/model-unsloth.F16.gguf"
+MODEL_PATH="/home/rong/Documents/_Projects/Llama3-retard/llama3.Q4_K_M.gguf"
 INPUT="I believe the meaning of life is "
 # Run llama.cpp with the specified model path and redirect stderr to a file
 ./llama.cpp/main \

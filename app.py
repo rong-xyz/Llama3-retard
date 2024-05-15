@@ -5,10 +5,10 @@ from util import run_llama_inference
 def run_inference(input_text, model):
     # Map UI model selection to file paths
     model_paths = {
-        "4位模型（更快）": "model-unsloth.Q4_K_M.gguf",
-        "16位模型（更强大）": "model-unsloth.F16.gguf"
+        "4位模型（更快）": "llama3.Q4_K_M.gguf",
+        "16位模型（更强大）": "llama3.F16.gguf"
     }
-    model_path = model_paths.get(model, "model-unsloth.Q4_K_M.gguf")  # Default to "4位模型（更快）"
+    model_path = model_paths.get(model, "llama3.Q4_K_M.gguf")  # Default to "4位模型（更快）"
 
     # Call the inference function
     response = run_llama_inference(

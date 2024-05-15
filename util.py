@@ -1,5 +1,7 @@
 import subprocess
 import os
+from datetime import datetime
+
 alpaca_prompt = """Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
 
 ### Instruction:
@@ -10,9 +12,11 @@ alpaca_prompt = """Below is an instruction that describes a task, paired with an
 {}"""
 
 
-def run_llama_inference(input_text, instruction="请用中文回答", Model="model-unsloth.F16.gguf"):
+def run_llama_inference(input_text, instruction="请用中文回答", Model="llama3.Q4_K_M.gguf"):
 
-    print(os.getcwd())
+    now = datetime.now()
+    formatted_date_time = now.strftime("%Y-%m-%d %H:%M:%S")
+    print(formatted_date_time, ": ", input_text)
 
     # Define the paths and inputs
     MODEL_PATH = Model
